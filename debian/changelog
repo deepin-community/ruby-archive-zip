@@ -1,0 +1,12 @@
+ruby-archive-zip (0.11.0-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 28 Dec 2020 23:57:48 +0100
+
+ruby-archive-zip (0.11.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #912856)
+
+ -- Mangesh Divate <divatemangesh12@gmail.com>  Sun, 04 Nov 2018 16:04:55 +0000

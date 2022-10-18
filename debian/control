@@ -1,0 +1,29 @@
+Source: ruby-archive-zip
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Mangesh Divate <divatemangesh12@gmail.com>
+Build-Depends: debhelper (>= 11~),
+               gem2deb,
+               rake,
+               ruby-io-like (>= 0.3.0)
+Standards-Version: 4.2.1
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-archive-zip.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-archive-zip
+Homepage: http://github.com/javanthropus/archive-zip
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-archive-zip
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter,
+         ruby-io-like (>= 0.3.0),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Description: Simple, extensible, pure Ruby ZIP archive support
+ Archive::Zip provides a simple Ruby-esque interface to creating, extracting,
+ and updating ZIP archives.  This implementation is 100% Ruby and loosely
+ modeled on the archive creation and extraction capabilities of InfoZip's
+ zip and unzip tools.
